@@ -1,0 +1,13 @@
+🔧 Professional Features Setup:
+
+1. Environment Variables (.env)
+CM= pip install python-decouple
+
+settings.py
+
+$$$$$$$$$$$$$ from decouple import config
+
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',') $$$$$$$$$$$$$ 
+
